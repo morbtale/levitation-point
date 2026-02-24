@@ -2441,7 +2441,7 @@ a.desktop-only {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
-  background-image: url("./public/morbtale_profile-2.webp");
+  background-image: url("./img/morbtale_profile.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 12px;

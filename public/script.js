@@ -1,16 +1,16 @@
 // ===== Smooth Scroll =====
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  });
-});
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+//   anchor.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const target = document.querySelector(this.getAttribute("href"));
+//     if (target) {
+//       target.scrollIntoView({
+//         behavior: "smooth",
+//         block: "start",
+//       });
+//     }
+//   });
+// });
 
 
 // ===== Swiper Carousel for Testimonials =====
@@ -204,7 +204,7 @@ let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
 
-  if (currentScroll > 100) {
+  if (currentScroll > 40) {
     nav.style.background = "rgba(10, 10, 15, 0.95)";
     nav.style.boxShadow = "0 8px 32px rgba(0, 0, 0, 0.3)";
   } else {
@@ -325,23 +325,6 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ===== Skill Bar Animation on Scroll =====
-const skillBars = document.querySelectorAll(".skill-bar");
-const skillObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.style.animation = "fillBar 1.5s ease-out forwards";
-      }
-    });
-  },
-  { threshold: 0.2 },
-);
-
-skillBars.forEach((bar) => {
-  bar.style.width = "0";
-  skillObserver.observe(bar);
-});
 
 // ===== Active Navigation Highlighting =====
 const sections = document.querySelectorAll(".section");
