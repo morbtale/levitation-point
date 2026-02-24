@@ -256,14 +256,14 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all sections and cards
-document
-  .querySelectorAll(".section, .bento-card, .skill-card, .work-card")
-  .forEach((el) => {
-    el.style.opacity = "0";
-    el.style.transform = "translateY(30px)";
-    el.style.transition = "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
-    observer.observe(el);
-  });
+// document
+//   .querySelectorAll(".section, .bento-card, .skill-card, .work-card")
+//   .forEach((el) => {
+//     el.style.opacity = "0";
+//     el.style.transform = "translateY(30px)";
+//     el.style.transition = "all 0.8s cubic-bezier(0.4, 0, 0.2, 1)";
+//     observer.observe(el);
+//   });
 
 // ===== Enhanced Glassmorphism on Scroll =====
 window.addEventListener("scroll", () => {
