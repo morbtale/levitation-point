@@ -1851,6 +1851,7 @@ body {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: auto;
 }
 
 .button-menu .btn-secondary:hover {
@@ -2966,6 +2967,10 @@ a.desktop-only {
 
   .button-menu .btn-secondary {
     width: auto;
+  }
+
+  .tos { 
+    width: 100%;
   }
 
   .more-portfolio-image {
